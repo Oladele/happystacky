@@ -1,8 +1,17 @@
+<%
+  title               = "Apps In The Cloud"
+  featurette_heading  = "We used to say the <b>internet</b>. Now we say the <b>cloud</b>. Why? Because <b>Apps</b>"
+  featurette_image    = "cloud/before.jpg"
+  article_slug        = "cloud-intro"
+  more_content_id_name = "more-content-"+article_slug
+%>
+
 <%= render 'static_pages/articles/components/featurette', 
-  title: "Apps In The Cloud",
-  featurette_heading: "We used to say the <b>internet</b>. Now we say the <b>cloud</b>. Why? Because <b>Apps</b>",
-  featurette_image: "cloud/before.jpg",
-  article_slug: "cloud-intro" %>
+  title: title,
+  featurette_heading: featurette_heading,
+  featurette_image: featurette_image,
+  article_slug: article_slug
+%>
 
 <div class="collapse" id="more-content-cloud-intro">
   <%= image_tag("cloud/before.jpg", class: "featurette-image img-responsive center-block", alt: "Before The Cloud") %>
