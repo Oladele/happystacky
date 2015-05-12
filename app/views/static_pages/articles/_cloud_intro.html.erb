@@ -1,34 +1,18 @@
 <%
   title               = "Apps In The Cloud"
   featurette_heading  = "We used to say the <b>internet</b>. Now we say the <b>cloud</b>. Why? Because <b>Apps</b>"
-  featurette_image    = "cloud/before.jpg"
-  article_slug        = "cloud-intro"
-  more_content_id_name = "more-content-"+article_slug
+  featurette_image      = "cloud/before.jpg"
+  featurette_image_alt  = "Before The Cloud"
+  article_slug          = "cloud-intro"
+  more_content_id_name  = "more-content-"+article_slug
+  more_content          = "static_pages/articles/cloud_intro_more_content" 
 %>
 
 <%= render 'static_pages/articles/components/featurette', 
   title: title,
   featurette_heading: featurette_heading,
   featurette_image: featurette_image,
-  article_slug: article_slug
+  featurette_image_alt: featurette_image_alt,
+  article_slug: article_slug,
+  more_content: more_content
 %>
-
-<div class="collapse" id="more-content-cloud-intro">
-  <%= image_tag("cloud/before.jpg", class: "featurette-image img-responsive center-block", alt: "Before The Cloud") %>
-  <p>
-    Compared to the previous generation of desktop apps which were distributed using CDs and other physical media, web apps and native apps have the characteristic that they can be easily downloaded and accessed by any user with the right credentials (username/password) from any computer with internet access. 
-    <blockquote>
-    <p>The so-called <strong>cloud</strong> is the collection of web/native apps which, just like real natural clouds, is always around and accessible using the <strong>intenet</strong></p>
-    </blockquote>
-    Another important term,  Software As A Service (SAAS), is a phrase that's gotten popular among some technology commentators to refer to either web apps, native apps or their closely related counterpart “Application Programming Interfaces” or APIs. More on APIs, Web/Native Apps, and different technology stacks next.
-  </p>
-
-  <%= image_tag("cloud/emergence.jpg", class: "img-responsive center-block", alt: "Before The Cloud") %>
-  
-  <h2>
-    <a class="toggle-more-less more-link-cloud-intro" data-toggle="collapse" href="#more-content-cloud-intro" aria-expanded="false" aria-controls="more-content-cloud-intro">
-      <span>more...</span><span class="hidden">...less</span>
-    </a>      
-  </h2>
-</div><!-- /.more-content-* -->
-<hr>
