@@ -7,12 +7,13 @@
 }
 
 .intro-header {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
+  padding-top: 60px;
+  // padding-bottom: 50px;
   text-align: center;
   // color: #f8f8f8;
-  background: url(desktop.jpg) no-repeat center center;
-  // background-size: cover;
+  background: url(desktop.jpg) no-repeat top right;
+  background-size: cover;
+  min-height: 400px;
 }
 
 /*Main column*/
@@ -40,6 +41,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) { 
+  .intro-header {
+    padding: 60px 100px 50px;
+  }
   .featurette-image {
     display: block;
     vertical-align: top;
