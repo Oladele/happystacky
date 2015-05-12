@@ -22,6 +22,7 @@ $(document).on 'ready page:load', ->
 
   $('.hidden').removeClass('hidden').hide()  
   $('.toggle-more-less').click ()->
+    # $(".featurette-image").toggle()
     thisClassSelector = that.getMoreLessSelector(this)
     $(thisClassSelector).each (index, item)->
       $(item).find('span').each ()->
