@@ -1,29 +1,8 @@
-
-<div class="featurette-heading clearfix">
-  
-  <!-- Large Screen Only: Featurette Image -->
-  <%= image_tag("cloud/before.jpg", class: "featurette-image pull-right", width:"300", alt: "Before The Cloud") %>        
-  
-  <h1>Apps And The Cloud</h1>
-  
-  <!-- Featurette text -->
-  <h2 class="featurette-heading">
-    <span class="text-muted featurette-text">
-      We used to say the <b>internet</b> but now we talk about the <b>cloud</b>. But what’s the difference?
-    </span>
-    
-    <!-- Mobile Only: Featurette Image -->
-    <%= image_tag("cloud/before.jpg", class: "mobile-featurette-image img-responsive center-block", alt: "Before The Cloud") %>
-    
-    <!-- More/Less Link -->
-    <div class="featurette-heading-more-link" >
-      <a class="toggle-more-less more-link-cloud-intro" data-toggle="collapse" href="#more-content-cloud-intro" aria-expanded="false" aria-controls="more-content-cloud-intro">
-        <span>more...</span><span class="hidden">less...</span>
-      </a>          
-    </div>
-  </h2>
-  
-</div>
+<%= render 'static_pages/articles/components/featurette', 
+  title: "Apps In The Cloud",
+  featurette_heading: "We used to say the <b>internet</b>. Now we say the <b>cloud</b>. Why? Because <b>Apps</b>",
+  featurette_image: "cloud/before.jpg",
+  article_slug: "cloud-intro" %>
 
 <div class="collapse" id="more-content-cloud-intro">
   <%= image_tag("cloud/before.jpg", class: "featurette-image img-responsive center-block", alt: "Before The Cloud") %>
@@ -32,7 +11,7 @@
     <blockquote>
     <p>The so-called <strong>cloud</strong> is the collection of web/native apps which, just like real natural clouds, is always around and accessible using the <strong>intenet</strong></p>
     </blockquote>
-    Another important term,  Software As A Service (SAAS), is a phrase popularized by business minded technology commentators to refer to either web apps, native apps or their closely related counterpart “Application Programming Interfaces” or APIs. More on APIs, Web/Native Apps, and different technology stacks next.
+    Another important term,  Software As A Service (SAAS), is a phrase that's gotten popular among some technology commentators to refer to either web apps, native apps or their closely related counterpart “Application Programming Interfaces” or APIs. More on APIs, Web/Native Apps, and different technology stacks next.
   </p>
 
   <%= image_tag("cloud/emergence.jpg", class: "img-responsive center-block", alt: "Before The Cloud") %>

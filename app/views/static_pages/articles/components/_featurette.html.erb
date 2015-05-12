@@ -1,0 +1,41 @@
+<div class="featurette-heading clearfix">
+  
+  <!-- variables that should be passed to this partial -->
+  <% title = raw(title) %>
+  <% featurette_heading = raw(featurette_heading)  %>
+  <% featurette_image %>
+  <% article_slug %>
+  
+  <!-- additional variables used by this partial-->  
+  <% more_link_class_name = "more-link-"+article_slug %>
+  <% more_content_href = "#"+"more-content-"+article_slug %>
+  <% more_content_aria = "more-content-"+article_slug %>
+  
+  <!-- Large Screen Only: Featurette Image -->
+  <%= image_tag(featurette_image, class: "featurette-image pull-right", width:"300", alt: "Before The Cloud") %>        
+  
+  <h1> <%= title %> </h1>
+  
+  <!-- Featurette text -->
+  <h2 class="featurette-heading">
+    <span class="text-muted featurette-text">
+      <%= featurette_heading %>
+    </span>
+    
+    <!-- Mobile Only: Featurette Image -->
+    <%= image_tag(featurette_image, class: "mobile-featurette-image img-responsive center-block", alt: "Before The Cloud") %>
+    
+    <!-- More/Less Link -->
+    <div class="featurette-heading-more-link" >
+      <a  class="toggle-more-less <%=more_link_class_name%>" 
+          data-toggle="collapse" 
+          href=<%=more_content_href%> 
+          aria-expanded="false" 
+          aria-controls="<%=more_content_aria%>"
+          >
+        <span>more...</span><span class="hidden">less...</span>
+      </a>          
+    </div>
+  </h2>
+  
+</div>
