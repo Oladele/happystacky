@@ -52,3 +52,19 @@
   line-height: 1;
   letter-spacing: 1px;
 }
+
+.featurette-heading-more-link{
+  padding-top: 20px; 
+}
+
+.featurette-image {
+  visibility: collapse;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+  .featurette-image {
+    visibility: visible;
+    vertical-align: top;
+  }
+}

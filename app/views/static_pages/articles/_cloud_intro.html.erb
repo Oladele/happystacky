@@ -1,22 +1,33 @@
 <div class="blog-post">
-
   <div class="row featurette">
-    <h1 class="blog-post-title">Apps And The Cloud</h1>
-    <h2 class="featurette-heading">
-      <span class="text-muted">
-        We used to say the <b>internet</b> but now we talk about the <b>cloud</b>. But what’s the difference?
-      </span>
-    </h2>
-    <p class="lead">
-        <a class="toggle-more-less more-link-cloud-intro" data-toggle="collapse" href="#more-content-cloud-intro" aria-expanded="false" aria-controls="more-content-cloud-intro">
-        <span>more...</span><span class="hidden">less...</span>
-      </a>
-    </p>
-    <%= image_tag("cloud/before.jpg", class: "featurette-image img-responsive", alt: "Before The Cloud") %>
+
+    <div class="featurette-heading">
+      
+      <!-- Featurette Image -->
+      <%= image_tag("cloud/before.jpg", class: "featurette-image pull-right", width:"300", alt: "Before The Cloud") %>        
+      
+      <h1 class="blog-post-title">Apps And The Cloud</h1>
+      
+      <!-- Featurette text -->
+      <h2 class="featurette-heading">
+        <span class="text-muted featurette-text">
+          We used to say the <b>internet</b> but now we talk about the <b>cloud</b>. But what’s the difference?
+        </span>
+        
+        <!-- More/Less Link -->
+        <div class="featurette-heading-more-link" >
+          <a class="toggle-more-less more-link-cloud-intro" data-toggle="collapse" href="#more-content-cloud-intro" aria-expanded="false" aria-controls="more-content-cloud-intro">
+            <span>more...</span><span class="hidden">less...</span>
+          </a>          
+        </div>
+      </h2>
+
+                  
+    </div>
   </div>
 
   <div class="collapse" id="more-content-cloud-intro">
-    <%= image_tag("cloud/before.jpg", class: "img-responsive", alt: "Before The Cloud") %>
+    <%= image_tag("cloud/before.jpg", class: "img-responsive center-block", alt: "Before The Cloud") %>
     <p>
       First, let’s have a quick review of the internet before all this cloud business came along. Thru the 90’s and early 00’s, the internet looked like the figure above. Applications required physical media like CDs to be sold/distributed through physical locations. The applications would then be installed on the users’ computer, called a ‘client’, which could have a bunch of these individually installed software applications (aka apps). The web browser was one of these apps but the web browser was special because it was used to view data (web pages) that was located on other computers, servers, connected to the internet. As these servers and client computers grew more powerful, so did the networks that connected them. This led to proliferation of application architectures where the majority of applications’ logic and users’ data was moved from clients to servers. Servers did most of the data processing and they dynamically generated “views” in the form of user-specific web pages in response to each users’ unique data and users’ interactions. These server powered apps which use the clients’ web browser as a kind of universal Graphical User Interface (GUI) are called web apps.
     </p>
