@@ -1,11 +1,12 @@
   <!-- variables that should be passed to this partial -->
+  <% more_content %>
   <% featurette_image %>
   <% featurette_image_alt %>
-  <% more_content %>
   <% more_link_class_name %>
   <% more_content_href %>
+  <% more_content_id %>
 
-<div class="collapse" id="more-content-cloud-intro">
+<div class="collapse" id=<%=more_content_id%> >
   <%= image_tag(featurette_image, class: "featurette-image img-responsive center-block", alt: featurette_image_alt ) %>
   
   <%= render more_content %>

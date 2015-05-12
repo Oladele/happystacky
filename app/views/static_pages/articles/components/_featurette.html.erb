@@ -10,8 +10,10 @@
   
   <!-- additional variables used by this partial-->  
   <% more_link_class_name = "more-link-"+article_slug %>
-  <% more_content_href = "#"+"more-content-"+article_slug %>
-  <% more_content_aria = "more-content-"+article_slug %>
+  <% more_content_id = "more-content-"+article_slug %>
+  <% more_content_href = "#"+ more_content_id %>
+  <% more_content_aria  = more_content_id %>
+
   
   <!-- Large Screen Only: Featurette Image -->
   <%= image_tag(featurette_image, class: "featurette-image pull-right", width:"300", alt: featurette_image_alt) %>        
@@ -43,10 +45,12 @@
 </div>
 
 <%= render 'static_pages/articles/components/more_content',
+  more_content: more_content,
   featurette_image: featurette_image,
   featurette_image_alt: featurette_image_alt,
-  more_content: more_content,
   more_link_class_name: more_link_class_name,
   more_content_href: more_content_href,
-  more_content_aria: more_content_aria
+  more_content_aria: more_content_aria,
+  more_content_id: more_content_id
+
 %>
