@@ -18,15 +18,18 @@
 }
 
 .intro-stack{
-  width: 400px;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  max-width: 400px;
   margin: 0 auto;
-  color: #333;
+  margin-top: 5%;
 }
 
 .intro-stackable{
   border: 1px solid;
   border-radius: 10px;
   padding: 5px 0px;
+  margin: 2px;
 }
 /*Main column*/
 
@@ -52,12 +55,8 @@
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width:768px) { 
-  .intro-header {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-  }
+@media (min-width:768px) {
+
   .featurette-image {
     display: block;
     vertical-align: top;
