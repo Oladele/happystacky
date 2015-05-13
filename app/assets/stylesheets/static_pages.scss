@@ -2,7 +2,7 @@
 .welcome{
   
   min-height: 300px;
-  background-image: image-url("desktop.jpg") ; 
+  background-image: image-url("desktop_fade_50.png") ; 
 
 }
 
@@ -10,7 +10,8 @@
   padding-bottom: 50px;
   text-align: center;
   // color: #f8f8f8;
-  background: image-url("desktop.jpg") no-repeat top right;
+  background: image-url("desktop_fade_50.png") no-repeat top right;
+  // background: image-url("desktop.jpg") no-repeat top right;
   background-size: cover;
   min-height: 400px;
 }
