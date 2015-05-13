@@ -2,15 +2,15 @@
 .welcome{
   
   min-height: 300px;
-  background-image: url(/assets/desktop.jpg) ; 
+  background-image: image-url("desktop.jpg") ; 
 
 }
 
 .intro-header {
-  // padding-bottom: 50px;
+  padding-bottom: 50px;
   text-align: center;
   // color: #f8f8f8;
-  background: url(desktop.jpg) no-repeat top right;
+  background: image-url("desktop.jpg") no-repeat top right;
   background-size: cover;
   min-height: 400px;
 }
@@ -41,7 +41,9 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) { 
   .intro-header {
-    padding: 60px 100px 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
   }
   .featurette-image {
     display: block;
