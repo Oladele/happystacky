@@ -14,8 +14,20 @@
   // background: image-url("desktop.jpg") no-repeat top right;
   background-size: cover;
   min-height: 400px;
+  text-align: center;
 }
 
+.intro-stack{
+  width: 400px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.intro-stackable{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
 /*Main column*/
 
 .blog-main {
