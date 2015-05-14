@@ -1,11 +1,25 @@
 <p>
-  In the example "To do List" list, made famous by the <a href="todomvc">TodoMVC</a> project, after the user nagivates to a web app (fictitiously, called "todolist.com" in this text), the user then interacts with the app either by typing (or copy/pasting) app-specific URLs like “todolist.com/todos/new” in the address bar or, more commonly, by clicking on links or buttons such as a button labeled “Add New Todo” within the app’s current view (web page). In either case, the user would then see a change in the view. In our current example, the user should now see one or more editable input elements, such as a To-do description text field and a To-do status checkbox, and maybe a “Submit” button. After the user types a To-do description and confirms that To-do checkbox status is “Incomplete”, the user clicks a submit button which takes the user back to the original To-do List view which now includes the new To-do item.  
+  The web app developer has to make significant architecture decisions about how much the server should be responsible for generating each view and how much of this should the client application code be responsible for. To explain the concepts involved in this decision, it is instructive to express both extremes of this decision:
+
+  <blockquote>
+
+  <p>
+    <h3>Server Rendered Views</h3>
+    A server sends dynamically generated views (as web pages) to the client browser with each client interaction
+  </p>
+
+  <p>
+    <h3>Client Rendered Views</h3>
+    A server sends application code to the client browser which then dynamically generates views (as web pages). In addition, a server also provides a data persistence service to the client application code      
+  </p>
+
+  </blockquote>
+
+  Though it is easier to explain and to grasp these two application architectures in isolation from each other, in reality the web developer may choose a combination of server and client-generated views when implementing any given app. In particular, an app whose views are rendered by the server and sent to the client (as web pages) will very often have some (javascript) application code sent along with the views to further augment the view as the client interacts with it (such as showing form errors) and to send/request additional data from the server. And conversely, a client rendered app whose javascript code is responsible for creating/displaying most views (as web pages), may have its initial "log-in" view or "welcome" view sent by the server.
 </p>
 
 <p>
-  To implement these user-interactions, the web app developer has to make significant architecture decisions about how much the server should be responsible for generating each view and how much of this should the client application code be responsible for. To explain the concepts involved in this decision, it is instructive to express both extremes of this decision: %100 server-generated views on the one end and %100 client-generated views on the other. However, in reality the web developer may choose a combination of server and client-generated views when implementing any given app.  
-</p>
-
-<p>
-  In both cases above, a server also handles application logic for persisting data. Data persistence is also known as CRUD application logic. CRUD stands for Create, Read, Update, Delete. And these are operations done on application data to implement many of the features which people expect when using native/web apps.
+  <blockquote>
+    In both cases above, a server also handles application logic for persisting data. Data persistence is also known as CRUD application logic. CRUD stands for Create, Read, Update, Delete. And these are operations done on application data to implement many of the features which people expect when using native/web apps.
+  </blockquote>
 </p>
