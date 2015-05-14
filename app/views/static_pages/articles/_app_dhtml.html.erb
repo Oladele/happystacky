@@ -1,0 +1,18 @@
+<%
+  title               = "Web App - Dynamic HTML (DHTML) App"
+  featurette_heading  = "Server sends dynamically generated views (as web pages) to the client browser with each client interaction"
+  featurette_image      = "apps/app_dhtml.jpg"
+  featurette_image_alt  = "DHTML Web App"
+  article_slug          = "app-dhtml"
+  more_content_id_name  = "more-content-"+article_slug
+  more_content          = "static_pages/articles/app_dhtml_more_content" 
+%>
+
+<%= render 'static_pages/articles/components/featurette', 
+  title: title,
+  featurette_heading: featurette_heading,
+  featurette_image: featurette_image,
+  featurette_image_alt: featurette_image_alt,
+  article_slug: article_slug,
+  more_content: more_content
+%>

@@ -1,0 +1,18 @@
+<%
+  title               = "Native App (eg Android, iOS Apps)"
+  featurette_heading  = "Application code is pre-installed by the user. And, like SPAs, a server also provides APIs"
+  featurette_image      = "apps/app_native.jpg"
+  featurette_image_alt  = "Native App"
+  article_slug          = "app-native"
+  more_content_id_name  = "more-content-"+article_slug
+  more_content          = "static_pages/articles/app_native_more_content" 
+%>
+
+<%= render 'static_pages/articles/components/featurette', 
+  title: title,
+  featurette_heading: featurette_heading,
+  featurette_image: featurette_image,
+  featurette_image_alt: featurette_image_alt,
+  article_slug: article_slug,
+  more_content: more_content
+%>
