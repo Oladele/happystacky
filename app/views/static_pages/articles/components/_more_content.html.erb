@@ -7,7 +7,10 @@
   <% more_content_id %>
 
 <div class="collapse" id=<%=more_content_id%> >
-  <%= image_tag(featurette_image, class: "featurette-image img-responsive center-block", alt: featurette_image_alt ) %>
+  
+  <% if featurette_image %>
+    <%= image_tag(featurette_image, class: "featurette-image img-responsive center-block", alt: featurette_image_alt ) %>
+  <% end %>
   
   <%= render more_content %>
   
