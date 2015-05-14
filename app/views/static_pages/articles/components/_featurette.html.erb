@@ -13,8 +13,9 @@
   <% more_content_id = "more-content-"+article_slug %>
   <% more_content_href = "#"+ more_content_id %>
   <% more_content_aria  = more_content_id %>
-
   
+  <a name= <%= article_slug %> ></a>
+
   <!-- Large Screen Only: Featurette Image -->
   <%if featurette_image %>
     <%= image_tag(featurette_image, class: "featurette-image pull-right", width:"300", alt: featurette_image_alt) %>        
