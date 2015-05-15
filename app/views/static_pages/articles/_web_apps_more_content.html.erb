@@ -5,17 +5,17 @@
 
   <p>
     <h3>Server Rendered Views</h3>
-    A server sends dynamically generated views (as web pages) to the client browser with each client interaction
+    A server sends dynamically generated views (as web pages) to the client browser with each client interaction. See the section <a href="/#app-dhtml">Dynamic HTML Apps</a> for architecture highlight diagram and example stacks.
   </p>
 
   <p>
     <h3>Client Rendered Views</h3>
-    A server sends application code to the client browser which then dynamically generates views (as web pages). In addition, a server also provides a data persistence service to the client application code      
+    A server sends application code to the client browser which then dynamically generates views (as web pages). In addition, a server also provides a data persistence service to the client application code. See the section <a href="/#app-spa">Single Page Apps</a> for architecture highlight diagram and example stacks.
   </p>
 
   </blockquote>
 
-  Though it is easier to explain and to grasp these two application architectures in isolation from each other, in reality the web developer may choose a combination of server and client-generated views when implementing any given app. In particular, an app whose views are rendered by the server and sent to the client (as web pages) will very often have some (javascript) application code sent along with the views to further augment the view as the client interacts with it (such as showing form errors) and to send/request additional data from the server. And conversely, a client rendered app whose javascript code is responsible for creating/displaying most views (as web pages), may have its initial "log-in" view or "welcome" view sent by the server.
+  Though it is easier to explain and to grasp these two application architectures in isolation from each other, in reality the web developer may choose a combination of server and client-generated views when implementing any given app. In particular, an app whose views are rendered by the server and sent to the client (as web pages) will very often have some (javascript) application code sent along with the views to further augment the view as the client interacts with it (such as showing form errors) and to send/request additional data from the server. And conversely, a client rendered app whose javascript code is responsible for creating/displaying most views (as web pages), may have its initial "log-in" view or "welcome" view sent by the server. The rendered views of web apps is referred to as a web page due to conventions of the world wide web standards introduced in the section <a href="/#site-app"> Web App or Web Site ?</a>.
 </p>
 
 <p>
