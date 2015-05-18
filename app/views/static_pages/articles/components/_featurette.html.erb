@@ -1,3 +1,6 @@
+<!-- anchor link target with css to accomodate fixed navbar -->
+<a name= <%= article_slug %> class="featurette-link-target"></a>
+
 <div class="featurette-heading clearfix">
   
   <!-- variables that should be passed to this partial -->
@@ -14,7 +17,6 @@
   <% more_content_href = "#"+ more_content_id %>
   <% more_content_aria  = more_content_id %>
   
-  <a name= <%= article_slug %> ></a>
 
   <!-- Large Screen Only: Featurette Image -->
   <%if featurette_image %>

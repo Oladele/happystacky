@@ -9,10 +9,7 @@
 .intro-header {
   padding-bottom: 50px;
   text-align: center;
-  // color: #f8f8f8;
-  background: image-url("desktop_fade_50.png") no-repeat top right;
   background: image-url("desktop_black_50.png") no-repeat top right;
-  // background: image-url("desktop.jpg") no-repeat top right;
   background-size: cover;
   min-height: 400px;
   text-align: center;
@@ -20,7 +17,6 @@
 
 .intro-stack{
   color: white;
-  // text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   max-width: 400px;
   margin: 0 auto;
   margin-top: 5%;
@@ -54,6 +50,13 @@
   display: none;
 }
 
+.featurette-link-target{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
@@ -66,3 +69,4 @@
     display: none;
   }
 }
+
