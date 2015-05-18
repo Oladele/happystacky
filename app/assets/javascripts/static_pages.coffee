@@ -27,3 +27,12 @@ $(document).on 'ready page:load', ->
     $(thisClassSelector).each (index, item)->
       $(item).find('span').each ()->
         $(this).toggle()
+
+  # Collapse nav menu items when clicked 
+  $('.nav .dropdown-menu li, .collapse-on-click').click ()->
+    $('.navbar-collapse').collapse('hide')
+
+  # Collapse nav menu but don't go to link
+  $('.collapse-on-click-ignore-link').click (e)->
+    e.preventDefault()
+    # $('.navbar-collapse').collapse('hide')
