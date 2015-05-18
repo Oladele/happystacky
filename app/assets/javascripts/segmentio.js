@@ -86,7 +86,8 @@
 
   })();
 
+// http://railsapps.github.io/rails-google-analytics.html
 // accommodate Turbolinks and track page views
-$(document).on('ready page:change', function() {
-  analytics.page();
-})
+// $(document).on('ready page:change', function() {
+//   analytics.page();
+// })
