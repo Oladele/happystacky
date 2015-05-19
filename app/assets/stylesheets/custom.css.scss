@@ -4,6 +4,9 @@ $navbar-inverse-link-color: white;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 body,
 html {
   padding-top: 25px;
@@ -17,6 +20,15 @@ hr {
 
 .text-right li{
   text-align: right;
+}
+
+.contact-info{
+  margin-top: 100px;
+  color: white;
+  a{
+    margin: 0px 8px;
+    color: white
+  }
 }
 
 

@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',          '4.1.5'
 gem 'bootstrap-sass', '3.3.4.1'
 gem 'sprockets',      '3.1.0'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
