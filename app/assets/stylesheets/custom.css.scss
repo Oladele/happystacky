@@ -14,6 +14,7 @@ html {
   height: 100%;
 }
 
+//http://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers/14271049#14271049
 .fix-for-extra-right-space{
   overflow-x: hidden;
 }
