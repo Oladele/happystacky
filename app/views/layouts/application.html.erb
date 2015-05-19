@@ -10,10 +10,13 @@
   </head>
   
   <body>
+  <div class="fix-for-extra-right-space">
     <%= render 'layouts/header' %>
     <%= render 'layouts/intro_header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
+    
+  </div>
 
   </body>
 </html>
