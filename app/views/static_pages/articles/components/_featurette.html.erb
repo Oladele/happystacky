@@ -10,6 +10,7 @@
   <% featurette_image_alt %>
   <% article_slug %>
   <% more_content %>
+  <% is_last = is_last || false %>
   
   <!-- additional variables used by this partial-->  
   <% more_link_class_name = "more-link-"+article_slug %>
@@ -37,27 +38,35 @@
     <% end %>
     
     <!-- More/Less Link -->
-    <div class="featurette-heading-more-link" >
-      <a  class="toggle-more-less <%=more_link_class_name%>" 
-          data-toggle="collapse" 
-          href=<%=more_content_href%> 
-          aria-expanded="false" 
-          aria-controls=<%=more_content_aria%>
-          >
-        <span>more...</span><span class="hidden">less...</span>
-      </a>          
-    </div>
+    <% if is_last %>
+      <div class="featurette-heading-more-link" >
+          <span class = "is_last" > Happy Internet Making !</span>
+      </div>
+    <% else %>
+      <div class="featurette-heading-more-link" >
+        <a  class="toggle-more-less <%=more_link_class_name%>" 
+            data-toggle="collapse" 
+            href=<%=more_content_href%> 
+            aria-expanded="false" 
+            aria-controls=<%=more_content_aria%>
+            >
+          <span>more...</span><span class="hidden">less...</span>
+        </a>          
+      </div>
+    <% end %>
   </h2>
   
 </div>
 
-<%= render 'static_pages/articles/components/more_content',
-  more_content: more_content,
-  featurette_image: featurette_image,
-  featurette_image_alt: featurette_image_alt,
-  more_link_class_name: more_link_class_name,
-  more_content_href: more_content_href,
-  more_content_aria: more_content_aria,
-  more_content_id: more_content_id
+<% if !is_last %>
+  <%= render 'static_pages/articles/components/more_content',
+    more_content: more_content,
+    featurette_image: featurette_image,
+    featurette_image_alt: featurette_image_alt,
+    more_link_class_name: more_link_class_name,
+    more_content_href: more_content_href,
+    more_content_aria: more_content_aria,
+    more_content_id: more_content_id
 
-%>
+  %>
+<% end %>
