@@ -34,11 +34,18 @@
 }
 
 .featurette-heading-more-link{
-  padding-top: 20px; 
+  padding-top: 20px;
+  .is_last{
+    color: #FF6600;
+  }
 }
 
 .featurette-image {
   display: none;
+}
+
+.featurette-heading-list{
+  list-style-type: square;
 }
 
 .featurette-link-target{
