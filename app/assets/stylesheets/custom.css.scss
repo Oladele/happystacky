@@ -3,13 +3,17 @@
 $navbar-default-bg: $stacky-navbar-bg;
 $body-bg: $stacky-bg;
 $text-color: $stacky-text-color;
+$dropdown-link-color: $stacky-text-color;
 $navbar-default-link-color: $text-color;
 $navbar-default-color: $text-color;
+$navbar-default-link-active-color: $text-color;
 $text-muted: $stacky-text-muted ;
 $blockquote-small-color: $stacky-blockquote-color;
 $blockquote-border-color: $stacky-blockquote-color;
 $link-color: $stacky-link-color;
 $link-hover-decoration: none;
+$dropdown-bg: $stacky-navbar-bg;
+$dropdown-link-hover-bg: $stacky-bg;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -33,6 +37,19 @@ html {
 .container .navbar-header{
   margin: 0px;
 }
+
+.navbar-default {
+  border-color: #ffff78;
+  background: $stacky-navbar-bg; /* Old browsers */
+  background: -moz-linear-gradient(top, $stacky-navbar-bg 0%, $stacky-bg 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$stacky-navbar-bg), color-stop(100%,$stacky-bg)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $stacky-navbar-bg 0%,$stacky-bg 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $stacky-navbar-bg 0%,$stacky-bg 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $stacky-navbar-bg 0%,$stacky-bg 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $stacky-navbar-bg 0%,$stacky-bg 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$stacky-navbar-bg', endColorstr='$stacky-bg',GradientType=0 ); /* IE6-9 */
+}
+
 
 .text-right li{
   text-align: right;
