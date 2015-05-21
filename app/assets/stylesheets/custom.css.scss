@@ -1,5 +1,13 @@
-$navbar-inverse-color: white;
-$navbar-inverse-link-color: white;
+@import "custom_colors";
+
+$navbar-default-bg: $stacky-navbar-bg;
+$body-bg: $stacky-bg;
+$text-color: $stacky-text-color;
+$navbar-default-link-color: $text-color;
+$navbar-default-color: $text-color;
+$text-muted: $stacky-text-muted ;
+$blockquote-small-color: $stacky-blockquote-color;
+$blockquote-border-color: $stacky-blockquote-color;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -12,7 +20,7 @@ html {
   padding-top: 25px;
   width: 100%;
   height: 100%;
-  background-color: #FFFFCC;
+  // background-color: #FFFFCC;
 }
 
 //http://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers/14271049#14271049
@@ -30,10 +38,10 @@ html {
 
 .contact-info{
   margin-top: 70px;
-  color: #FFFFCC;
+  color: $stacky-bg;
   a{
     margin: 0px 8px;
-    color: #FFFFCC;
+    color: $stacky-bg;
   }
 }
 
@@ -44,15 +52,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
+  color: $stacky-text-muted;
 }
 
 footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
+  color: $stacky-text-muted;
 }
 
 footer small {

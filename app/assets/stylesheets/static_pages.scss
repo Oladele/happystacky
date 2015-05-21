@@ -1,3 +1,5 @@
+@import "custom_colors";
+
 .intro-header {
   text-align: center;
   background: image-url("desktop_black_50.png") no-repeat top right;
@@ -7,7 +9,7 @@
 }
 
 .intro-stack{
-  color: #FFFFCC;
+  color: $stacky-bg;
   max-width: 400px;
   margin: 0 auto;
   margin-top: 5%;
@@ -36,12 +38,13 @@
 .featurette-heading-more-link{
   padding-top: 20px;
   .is_last{
-    color: #FF6600;
+    color: $stacky-blockquote-color;
   }
 }
 
 .featurette-image {
   display: none;
+  margin-bottom: 10px;
 }
 
 .featurette-heading-list{
