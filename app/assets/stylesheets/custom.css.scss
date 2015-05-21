@@ -64,6 +64,14 @@ html {
   }
 }
 
+a blockquote{
+  border-left: 5px solid $stacky-link-color;
+}
+
+a .fa{
+  margin: 0px 3px;
+}
+
 
 /* footer */
 
